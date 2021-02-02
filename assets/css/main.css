@@ -9,7 +9,7 @@
 
 /* Reset */
 
-.button {
+button {
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -21,6 +21,11 @@
 	cursor: pointer;
 	align-self: center;
 	display: flex;
+  }
+  iframe {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
   }
   
   .button1 {background-color: #4CAF50;} /* Green */
@@ -2941,7 +2946,7 @@
 			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			transition: opacity 1.5s ease-in-out, visibility 1.5s;
 			content: '';
-			background-image: url(../../images/bg.jpg);
+			background-image: url(../../images/bg2.jpg);
 			background-attachment: fixed;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -3049,7 +3054,7 @@
 
 	.wrapper > header {
 		text-align: center;
-		background: #FFF;
+		background: white;
 		padding: 2rem;
 		margin: 0;
 	}
@@ -3130,7 +3135,7 @@
 		}
 
 	.wrapper.style2 {
-		background: #1e1f23;
+		background:transparent;
 		padding: 6rem;
 	}
 
@@ -3140,7 +3145,7 @@
 		}
 
 			.wrapper.style2 header h2 {
-				color: #FFF;
+				color: white;
 			}
 
 				.wrapper.style2 header h2:after {
