@@ -9,6 +9,23 @@
 
 /* Reset */
 
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	align-self: center;
+	display: flex;
+  }
+  
+  .button1 {background-color: #4CAF50;} /* Green */
+  .button2 {background-color: #008CBA;} /* Blue */
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -2320,7 +2337,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		-moz-align-items: stretch;
+		-moz-align-items: center;
 		-webkit-align-items: stretch;
 		-ms-align-items: stretch;
 		align-items: stretch;
@@ -2336,6 +2353,7 @@
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			-moz-flex-grow: 0;
+			align-items: center;
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
 			flex-grow: 0;
@@ -2343,6 +2361,9 @@
 
 		.gallery > * {
 			width: 50%;
+			align-self: center;
+			display: flex;
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3088,12 +3109,14 @@
 
 	.wrapper.style1 .content {
 		padding: 6rem;
+		text-align: center
 	}
 
 		@media screen and (max-width: 1280px) {
 
 			.wrapper.style1 .content {
 				padding: 4rem;
+				text-align: center
 			}
 
 		}
@@ -3126,6 +3149,7 @@
 
 			.wrapper.style2 header p {
 				color: rgba(255, 255, 255, 0.25);
+				-ms-text-align-last: center;
 			}
 
 		@media screen and (max-width: 1280px) {
