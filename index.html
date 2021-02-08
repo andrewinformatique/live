@@ -8,6 +8,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
+<script>
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+      } else {
+       
+      }
+    }
+    
+    var x = window.matchMedia("(max-width: 700px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+    
+
 <body>
 
 <div class="jumbotron text-center">
@@ -15,13 +30,13 @@
   <p>Hors Ligne</p> 
 </div>
   
-<div class="container">
+<div id="page" class="flex-container container-fluid">
   <div class="row">
-    <div class="col">
-            <iframe src="https://obs.ninja/?view=uvaaa8L&label=livem" class="justify-content: center;" style=" border:0px #ffffff none;" name="live" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
+    <div id="divLive" class="col-lg-8 flex-item:nth-child(1)">
+            <iframe id="live" src="https://obs.ninja/?view=uvaaa8L&label=livem"  style=" border:0px #ffffff none;" name="live" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="75%" allowfullscreen></iframe>
     </div>
-    <div class="col">
-        <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="10px" marginwidth="10px" allowtransparency="true" src="https://chatroll.com/embed/chat/dj-andrew-ab-live?id=-Tun1455OBf&platform=html"></iframe>
+    <div class="col-md-auto flex-item:nth-child(2)">
+        <iframe id="chat" width="30%" height="350px" frameborder="0" scrolling="no" marginheight="10px" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/dj-andrew-ab-live?id=-Tun1455OBf&platform=html"></iframe>
     </div>
   </div>
 </div>
