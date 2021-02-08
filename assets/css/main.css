@@ -27,6 +27,16 @@ button {
 	margin-left: auto;
 	margin-right: auto;
   }
+
+#collapse-nav {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #collapse-nav {
+    display: block;
+  }
+}
   
   .button1 {background-color: #4CAF50;} /* Green */
   .button2 {background-color: #008CBA;} /* Blue */
