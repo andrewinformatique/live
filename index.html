@@ -9,21 +9,34 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-</head>
 
-<script>
-    function myFunction(x) {
-      if (x.matches) { // If media query matches
-        document.getElementsByName("live").className="sPetit";
-      } else {
-       
-      }
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: maroon;
+          font: italic small-caps bold 40px/30px Georgia, serif;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      transition: 0.4s;
     }
     
-    var x = window.matchMedia("(max-width: 700px)")
-    myFunction(x) // Call listener function at run time
-    x.addListener(myFunction) // Attach listener function on state changes
-</script>
+    .active, .accordion:hover {
+      background-color: #ccc; 
+    }
+    
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+    </style>
+</head>
+
     
 
 <body>
@@ -31,8 +44,8 @@
     <a class="navbar-brand" href="index.html">
       <img src="images/djlogo.png" width="300" height="40" alt="">
     </a>
-    <a class="navbar-brand" href="reprises.html">
-      <h4>Reprises Live</h4>
+    <a class="nav" href="reprises.html">
+      <h4 class="nav">Reprises Live</h4>
     </a>
 
   </nav>
@@ -41,7 +54,12 @@
 </div>
   
 <div id="page" class="container">
-  <!-- <img src="images/valse.jpg" width="100%" alt="Hors Ligne">-->
+  <img src="images/valse.jpg" width="100%" alt="Hors Ligne">
+  &nbsp;
+
+  <button class="accordion sHorsLigne">Hors Ligne</button>
+<div class="panel">
+  
  <div class="flex-container">
     <div id="divLive" class="flex-item:nth-child(1) ">
       <iframe id="live" src="https://obs.ninja/?view=uvaaa8L&label=livem"  style=" border:0px #ffffff none;" name="live" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="100%" allowfullscreen></iframe>
@@ -55,7 +73,29 @@
         &nbsp;
       </div>
   </div>
+  </div>
 </div>
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 
 </body>
 </html>
