@@ -1,5 +1,10 @@
 .sTitre {
-    font: 'Brush Script MT', cursive;}
+    font: 'Brush Script MT', cursive;
+}
+ img{
+     vertical-align: top;
+ }
+
 .flex-container {
     display: -ms-flexbox;
     display: -webkit-flex;
