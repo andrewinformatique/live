@@ -1,5 +1,53 @@
 .sTitre {
-    font: 'Brush Script MT', cursive;}
+    background-image: linear-gradient(#08085a,#000031) ;
+    border-radius: 25px;
+font-weight: 300;
+    color: wheat;
+    font-family: 'Hanalei', cursive;
+    font-size: 2cm;
+        cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    position: relative;
+
+}
+body {
+    background-image: linear-gradient(#abdf63, #488214);
+    background-color: #abdf63;
+    background-size: cover;} 
+.sHeader {
+    align-items: center;
+    display: flex;
+}
+.center {
+    margin: auto;
+    width: 80%;
+  }
+.accordion {
+    color: maroon;
+        font: italic small-caps bold 40px/30px Georgia, serif;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
 .flex-container {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -61,14 +109,6 @@
         height: 150px;
       }
 
-      .nav:hover a{
-          color:chartreuse;
-          
-      }
-
-      .nav a {
-          color: inherit;
-      }
       .sHorsLigne {
           color: maroon;
           font: italic small-caps bold 12px/30px Georgia, serif;
@@ -85,4 +125,7 @@
         section {
             flex: 1;   
         }
+        #ul{
+        margin: 0;        
+    }
         }
