@@ -36,25 +36,30 @@ body {
   }
 .accordion {
     color: maroon;
-        font: italic small-caps bold 40px/30px Georgia, serif;
+        font: italic small-caps bold 10px Georgia, serif;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
-    text-align: center;
+    text-align: right;
     outline: none;
-    transition: 0.4s;
-  }
+    transition: 0.5s;
+    position: initial;
+margin: 10;  
+}
+
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+      color: thistle;
   }
   
   .panel {
-    padding: 0 18px;
     display: none;
-    background-color: white;
-    overflow: hidden;
+    background-color: transparent;
+    overflow: visible;
+    width: 80%;
+    margin-left: 0;
+    position: relative;
   }
 
 .flex-container {
